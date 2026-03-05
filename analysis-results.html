@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,25 +12,5 @@
         .key { font-weight: bold; color: #34495e; }
         .value { color: #2d6a4f; }
     </style>
-</head>
+<!DOCTYPE html>
 <body>
-    <h1>Analysis Results</h1>
-    <div id="results" class="analysis">Loading analysis...</div>
-    <script>
-        fetch('analysis-results.json')
-            .then(response => response.json())
-            .then(data => {
-                const container = document.getElementById('results');
-                container.innerHTML = '';
-                for (const key in data) {
-                    const div = document.createElement('div');
-                    div.innerHTML = `<span class='key'>${key}:</span> <span class='value'>${JSON.stringify(data[key])}</span>`;
-                    container.appendChild(div);
-                }
-            })
-            .catch(err => {
-                document.getElementById('results').innerText = 'Failed to load analysis.';
-            });
-    </script>
-</body>
-</html>
