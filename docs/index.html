@@ -31,47 +31,69 @@
 
         fetch('analysis-results.json')
             .then(response => response.json())
-            .then(data => {
+            .then(json => {
+                // Support JSON with 'full_analysis' root
+                const data = json.full_analysis ? json.full_analysis : json;
                 const container = document.getElementById('results');
                 let html = '';
-                html += `<h2>Analysis Date: ${new Date(data.analysis_date).toLocaleString()}</h2>`;
-                html += `<h3>Total Applicants: ${data.total_applicants}</h3>`;
+                html += `<h2>Analysis Date: ${data.analysis_date ? new Date(data.analysis_date).toLocaleString() : 'N/A'}</h2>`;
+                html += `<h3>Total Applicants: ${data.total_applicants !== undefined ? data.total_applicants : 'N/A'}</h3>`;
 
                 // Metric 1: Barriers
                 if (data.metrics_summary && data.metrics_summary.metric_1_barriers) {
                     const m1 = data.metrics_summary.metric_1_barriers;
                     html += `<h2>Top Barriers</h2>`;
-                    html += createTable(['barrier','count','percentage'], m1.top_barriers);
-                    html += `<h3>All Barriers</h3>`;
-                    html += createTable(['barrier','count','percentage'], m1.all_barriers);
-                    html += `<h3>Barrier Depth Distribution</h3>`;
-                    html += createTable(['type','count','percentage'], Object.entries(m1.barrier_depth_distribution).map(([type, obj]) => ({type, ...obj})));
-                    html += `<p>Applicants mentioning multiple barriers: <b>${m1.applicants_mentioning_multiple_barriers}</b> (${m1.percentage_with_multiple}%)</p>`;
-                    html += `<p>Applicants mentioning three+ barriers: <b>${m1.applicants_mentioning_three_plus}</b> (${m1.percentage_with_three_plus}%)</p>`;
-                    html += `<p>Applicants mentioning four+ barriers: <b>${m1.applicants_mentioning_four_plus}</b> (${m1.percentage_with_four_plus}%)</p>`;
+                    if (m1.top_barriers) html += createTable(['barrier','count','percentage'], m1.top_barriers);
+                    if (m1.all_barriers) {
+                        html += `<h3>All Barriers</h3>`;
+                        html += createTable(['barrier','count','percentage'], m1.all_barriers);
+                    }
+                    if (m1.barrier_depth_distribution) {
+                        html += `<h3>Barrier Depth Distribution</h3>`;
+                        html += createTable(['type','count','percentage'], Object.entries(m1.barrier_depth_distribution).map(([type, obj]) => ({type, ...obj})));
+                    }
+                    if (m1.applicants_mentioning_multiple_barriers !== undefined)
+                        html += `<p>Applicants mentioning multiple barriers: <b>${m1.applicants_mentioning_multiple_barriers}</b> (${m1.percentage_with_multiple || 0}%)</p>`;
+                    if (m1.applicants_mentioning_three_plus !== undefined)
+                        html += `<p>Applicants mentioning three+ barriers: <b>${m1.applicants_mentioning_three_plus}</b> (${m1.percentage_with_three_plus || 0}%)</p>`;
+                    if (m1.applicants_mentioning_four_plus !== undefined)
+                        html += `<p>Applicants mentioning four+ barriers: <b>${m1.applicants_mentioning_four_plus}</b> (${m1.percentage_with_four_plus || 0}%)</p>`;
                 }
 
                 // Metric 3: Governance Engagement
                 if (data.metrics_summary && data.metrics_summary.metric_3_engagement) {
                     const m3 = data.metrics_summary.metric_3_engagement;
                     html += `<h2>Governance Engagement</h2>`;
-                    html += `<h3>All Governance Keywords</h3>`;
-                    html += createTable(['keyword','count','percentage'], m3.all_governance_keywords);
-                    html += `<h3>Governance Depth Distribution</h3>`;
-                    html += createTable(['type','count','percentage'], Object.entries(m3.governance_depth_distribution).map(([type, obj]) => ({type, ...obj})));
-                    html += `<p>Applicants with governance signal: <b>${m3.applicants_with_governance_signal}</b> (${m3.percentage_with_signal}%)</p>`;
-                    html += `<p>Applicants with multiple signals: <b>${m3.applicants_with_multiple_signals}</b> (${m3.percentage_with_multiple_signals}%)</p>`;
-                    html += `<p>Applicants with three+ signals: <b>${m3.applicants_with_three_plus_signals}</b> (${m3.percentage_with_three_plus_signals}%)</p>`;
+                    if (m3.all_governance_keywords) {
+                        html += `<h3>All Governance Keywords</h3>`;
+                        html += createTable(['keyword','count','percentage'], m3.all_governance_keywords);
+                    }
+                    if (m3.governance_depth_distribution) {
+                        html += `<h3>Governance Depth Distribution</h3>`;
+                        html += createTable(['type','count','percentage'], Object.entries(m3.governance_depth_distribution).map(([type, obj]) => ({type, ...obj})));
+                    }
+                    if (m3.applicants_with_governance_signal !== undefined)
+                        html += `<p>Applicants with governance signal: <b>${m3.applicants_with_governance_signal}</b> (${m3.percentage_with_signal || 0}%)</p>`;
+                    if (m3.applicants_with_multiple_signals !== undefined)
+                        html += `<p>Applicants with multiple signals: <b>${m3.applicants_with_multiple_signals}</b> (${m3.percentage_with_multiple_signals || 0}%)</p>`;
+                    if (m3.applicants_with_three_plus_signals !== undefined)
+                        html += `<p>Applicants with three+ signals: <b>${m3.applicants_with_three_plus_signals}</b> (${m3.percentage_with_three_plus_signals || 0}%)</p>`;
                 }
 
                 // Metric 4: Regional Collaboration
                 if (data.metrics_summary && data.metrics_summary.metric_4_collaboration) {
                     const m4 = data.metrics_summary.metric_4_collaboration;
                     html += `<h2>Regional Collaboration</h2>`;
-                    html += `<h3>All Regional Keywords</h3>`;
-                    html += createTable(['keyword','count','percentage'], m4.all_regional_keywords);
-                    html += `<h3>Collaboration Depth Distribution</h3>`;
-                    html += createTable(['type','count','percentage'], Object.entries(m4.regional_collaboration_depth_distribution).map(([type, obj]) => ({type, ...obj})));
+                    if (m4.all_regional_keywords) {
+                        html += `<h3>All Regional Keywords</h3>`;
+                        html += createTable(['keyword','count','percentage'], m4.all_regional_keywords);
+                    }
+                    if (m4.regional_collaboration_depth_distribution) {
+                        html += `<h3>Collaboration Depth Distribution</h3>`;
+                        html += createTable(['type','count','percentage'], Object.entries(m4.regional_collaboration_depth_distribution).map(([type, obj]) => ({type, ...obj})));
+                    }
+                    if (m4.applicants_expressing_regional_interest !== undefined)
+                        html += `<p>Applicants expressing regional interest: <b>${m4.applicants_expressing_regional_interest}</b> (${m4.percentage_interested || 0}%)</p>`;
                 }
 
                 container.innerHTML = html;
