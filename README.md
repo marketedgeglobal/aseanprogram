@@ -1,3 +1,4 @@
+Last redeploy trigger: March 6, 2026
 ## Live Page
 
 [View the deployed analysis results here.](https://marketedgeglobal.github.io/aseanprogram/)
