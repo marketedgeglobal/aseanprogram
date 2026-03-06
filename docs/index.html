@@ -81,22 +81,39 @@
                 }
             });
             // Collaboration Chart
-            const collab = data.metrics_summary?.metric_4_collaboration?.all_regional_keywords || [];
-            new Chart(document.getElementById('collabChart'), {
-                type: 'bar',
-                data: {
-                    labels: collab.slice(0,5).map(c => c.keyword),
-                    datasets: [{
-                        label: 'Frequency',
-                        data: collab.slice(0,5).map(c => c.count),
-                        backgroundColor: '#e76f51',
-                    }]
-                },
-                options: {
-                    plugins: { legend: { display: false } },
-                    scales: { y: { beginAtZero: true } }
-                }
-            });
+                const collab = data.metrics_summary?.metric_4_collaboration?.all_regional_keywords || [];
+                const regionalInterest = data.metrics_summary?.metric_4_collaboration?.percentage_interested || 0;
+                // Prepare labels and data
+                const collabLabels = ['Expressed Regional Interest'].concat(collab.slice(0,5).map(c => c.keyword));
+                const collabData = [regionalInterest].concat(collab.slice(0,5).map(c => c.count));
+                new Chart(document.getElementById('collabChart'), {
+                    type: 'bar',
+                    data: {
+                        labels: collabLabels,
+                        datasets: [{
+                            label: 'Regional Interest & Frequency',
+                            data: collabData,
+                            backgroundColor: [
+                                '#264653', // dark blue for percentage
+                                '#e76f51', '#e76f51', '#e76f51', '#e76f51', '#e76f51' // orange for keywords
+                            ],
+                        }]
+                    },
+                    options: {
+                        plugins: { legend: { display: false } },
+                        scales: { y: { beginAtZero: true } },
+                        tooltips: {
+                            callbacks: {
+                                label: function(context) {
+                                    if (context.dataIndex === 0) {
+                                        return 'Expressed Regional Interest: ' + regionalInterest + '%';
+                                    }
+                                    return 'Frequency: ' + context.parsed.y;
+                                }
+                            }
+                        }
+                    }
+                });
         }
         // ...existing code...
         function createTable(headers, rows) {
