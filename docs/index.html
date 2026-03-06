@@ -97,6 +97,24 @@
                         html += `<p>Applicants expressing regional interest: <b>${m4.applicants_expressing_regional_interest}</b> (${m4.percentage_interested || 0}%)</p>`;
                 }
 
+                // Display full applicant list
+                if (data.applicants && Array.isArray(data.applicants)) {
+                    html += `<h2>Applicant Details</h2>`;
+                    html += createTable(
+                        ['row','name','country','organization','barrier_keywords_found','barrier_count','governance_keywords_found','governance_count','collaboration_keywords_found','collaboration_count','total_keyword_occurrences','has_multiple_barriers','has_governance_signal','has_multiple_governance_signals','expresses_regional_interest'],
+                        data.applicants.map(app => ({
+                            ...app,
+                            barrier_keywords_found: app.barrier_keywords_found ? app.barrier_keywords_found.join(', ') : '',
+                            governance_keywords_found: app.governance_keywords_found ? app.governance_keywords_found.join(', ') : '',
+                            collaboration_keywords_found: app.collaboration_keywords_found ? app.collaboration_keywords_found.join(', ') : '',
+                            has_multiple_barriers: app.has_multiple_barriers ? 'Yes' : 'No',
+                            has_governance_signal: app.has_governance_signal ? 'Yes' : 'No',
+                            has_multiple_governance_signals: app.has_multiple_governance_signals ? 'Yes' : 'No',
+                            expresses_regional_interest: app.expresses_regional_interest ? 'Yes' : 'No'
+                        })
+                    ));
+                }
+
                 container.innerHTML = html;
             })
             .catch(err => {
