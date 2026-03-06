@@ -15,8 +15,90 @@
 <body>
     <h1>Analysis Results</h1>
     <p style="font-size:small;color:#888;">Redeploy triggered: March 6, 2026</p>
+    <section class="analysis" id="dashboard">
+        <h2>Dashboard Visuals</h2>
+        <div style="display:flex;flex-wrap:wrap;gap:2em;">
+            <div style="flex:1;min-width:300px;">
+                <h3>Top 5 Barriers</h3>
+                <canvas id="barriersChart"></canvas>
+                <p style="font-size:small;color:#888;">40.4% mention at least two of the top three barriers</p>
+            </div>
+            <div style="flex:1;min-width:300px;">
+                <h3>Policy Engagement Penetration</h3>
+                <canvas id="policyChart"></canvas>
+                <p style="font-size:small;color:#888;">68.1% have at least one signal, 44.7% have multiple signals</p>
+            </div>
+            <div style="flex:1;min-width:300px;">
+                <h3>Regional Collaboration Demand</h3>
+                <canvas id="collabChart"></canvas>
+                <p style="font-size:small;color:#888;">66% express regional interest</p>
+            </div>
+        </div>
+    </section>
     <div id="results" class="analysis">Loading analysis...</div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
+        // Dashboard charts
+        function renderDashboardCharts(data) {
+            // Barriers Chart
+            const barriers = data.metrics_summary?.metric_1_barriers?.top_barriers || [];
+            new Chart(document.getElementById('barriersChart'), {
+                type: 'bar',
+                data: {
+                    labels: barriers.map(b => b.barrier),
+                    datasets: [{
+                        label: 'Applicants',
+                        data: barriers.map(b => b.count),
+                        backgroundColor: '#2d6a4f',
+                    }]
+                },
+                options: {
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+            // Policy Engagement Chart
+            const policyDist = data.metrics_summary?.metric_3_engagement?.governance_depth_distribution || {};
+            const policyLabels = ['None', 'Moderate (1 signal)', 'Strong (2+ signals)'];
+            const policyCounts = [
+                policyDist.zero_signals?.count || 0,
+                policyDist.one_signal?.count || 0,
+                (policyDist.two_signals?.count || 0) + (policyDist.three_signals?.count || 0) + (policyDist.four_signals?.count || 0) + (policyDist.five_plus_signals?.count || 0)
+            ];
+            new Chart(document.getElementById('policyChart'), {
+                type: 'bar',
+                data: {
+                    labels: policyLabels,
+                    datasets: [{
+                        label: 'Applicants',
+                        data: policyCounts,
+                        backgroundColor: '#457b9d',
+                    }]
+                },
+                options: {
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+            // Collaboration Chart
+            const collab = data.metrics_summary?.metric_4_collaboration?.all_regional_keywords || [];
+            new Chart(document.getElementById('collabChart'), {
+                type: 'bar',
+                data: {
+                    labels: collab.slice(0,5).map(c => c.keyword),
+                    datasets: [{
+                        label: 'Frequency',
+                        data: collab.slice(0,5).map(c => c.count),
+                        backgroundColor: '#e76f51',
+                    }]
+                },
+                options: {
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+        }
+        // ...existing code...
         function createTable(headers, rows) {
             let html = '<table><thead><tr>';
             headers.forEach(h => html += `<th>${h}</th>`);
@@ -33,88 +115,13 @@
         fetch('analysis-results.json')
             .then(response => response.json())
             .then(json => {
-                // Support JSON with 'full_analysis' root
                 const data = json.full_analysis ? json.full_analysis : json;
+                renderDashboardCharts(data);
                 const container = document.getElementById('results');
                 let html = '';
                 html += `<h2>Analysis Date: ${data.analysis_date ? new Date(data.analysis_date).toLocaleString() : 'N/A'}</h2>`;
                 html += `<h3>Total Applicants: ${data.total_applicants !== undefined ? data.total_applicants : 'N/A'}</h3>`;
-
-                // Metric 1: Barriers
-                if (data.metrics_summary && data.metrics_summary.metric_1_barriers) {
-                    const m1 = data.metrics_summary.metric_1_barriers;
-                    html += `<h2>Top Barriers</h2>`;
-                    if (m1.top_barriers) html += createTable(['barrier','count','percentage'], m1.top_barriers);
-                    if (m1.all_barriers) {
-                        html += `<h3>All Barriers</h3>`;
-                        html += createTable(['barrier','count','percentage'], m1.all_barriers);
-                    }
-                    if (m1.barrier_depth_distribution) {
-                        html += `<h3>Barrier Depth Distribution</h3>`;
-                        html += createTable(['type','count','percentage'], Object.entries(m1.barrier_depth_distribution).map(([type, obj]) => ({type, ...obj})));
-                    }
-                    if (m1.applicants_mentioning_multiple_barriers !== undefined)
-                        html += `<p>Applicants mentioning multiple barriers: <b>${m1.applicants_mentioning_multiple_barriers}</b> (${m1.percentage_with_multiple || 0}%)</p>`;
-                    if (m1.applicants_mentioning_three_plus !== undefined)
-                        html += `<p>Applicants mentioning three+ barriers: <b>${m1.applicants_mentioning_three_plus}</b> (${m1.percentage_with_three_plus || 0}%)</p>`;
-                    if (m1.applicants_mentioning_four_plus !== undefined)
-                        html += `<p>Applicants mentioning four+ barriers: <b>${m1.applicants_mentioning_four_plus}</b> (${m1.percentage_with_four_plus || 0}%)</p>`;
-                }
-
-                // Metric 3: Governance Engagement
-                if (data.metrics_summary && data.metrics_summary.metric_3_engagement) {
-                    const m3 = data.metrics_summary.metric_3_engagement;
-                    html += `<h2>Governance Engagement</h2>`;
-                    if (m3.all_governance_keywords) {
-                        html += `<h3>All Governance Keywords</h3>`;
-                        html += createTable(['keyword','count','percentage'], m3.all_governance_keywords);
-                    }
-                    if (m3.governance_depth_distribution) {
-                        html += `<h3>Governance Depth Distribution</h3>`;
-                        html += createTable(['type','count','percentage'], Object.entries(m3.governance_depth_distribution).map(([type, obj]) => ({type, ...obj})));
-                    }
-                    if (m3.applicants_with_governance_signal !== undefined)
-                        html += `<p>Applicants with governance signal: <b>${m3.applicants_with_governance_signal}</b> (${m3.percentage_with_signal || 0}%)</p>`;
-                    if (m3.applicants_with_multiple_signals !== undefined)
-                        html += `<p>Applicants with multiple signals: <b>${m3.applicants_with_multiple_signals}</b> (${m3.percentage_with_multiple_signals || 0}%)</p>`;
-                    if (m3.applicants_with_three_plus_signals !== undefined)
-                        html += `<p>Applicants with three+ signals: <b>${m3.applicants_with_three_plus_signals}</b> (${m3.percentage_with_three_plus_signals || 0}%)</p>`;
-                }
-
-                // Metric 4: Regional Collaboration
-                if (data.metrics_summary && data.metrics_summary.metric_4_collaboration) {
-                    const m4 = data.metrics_summary.metric_4_collaboration;
-                    html += `<h2>Regional Collaboration</h2>`;
-                    if (m4.all_regional_keywords) {
-                        html += `<h3>All Regional Keywords</h3>`;
-                        html += createTable(['keyword','count','percentage'], m4.all_regional_keywords);
-                    }
-                    if (m4.regional_collaboration_depth_distribution) {
-                        html += `<h3>Collaboration Depth Distribution</h3>`;
-                        html += createTable(['type','count','percentage'], Object.entries(m4.regional_collaboration_depth_distribution).map(([type, obj]) => ({type, ...obj})));
-                    }
-                    if (m4.applicants_expressing_regional_interest !== undefined)
-                        html += `<p>Applicants expressing regional interest: <b>${m4.applicants_expressing_regional_interest}</b> (${m4.percentage_interested || 0}%)</p>`;
-                }
-
-                // Display full applicant list
-                if (data.applicants && Array.isArray(data.applicants)) {
-                    html += `<h2>Applicant Details</h2>`;
-                    html += createTable(
-                        ['row','name','country','organization','barrier_keywords_found','barrier_count','governance_keywords_found','governance_count','collaboration_keywords_found','collaboration_count','total_keyword_occurrences','has_multiple_barriers','has_governance_signal','has_multiple_governance_signals','expresses_regional_interest'],
-                        data.applicants.map(app => ({
-                            ...app,
-                            barrier_keywords_found: app.barrier_keywords_found ? app.barrier_keywords_found.join(', ') : '',
-                            governance_keywords_found: app.governance_keywords_found ? app.governance_keywords_found.join(', ') : '',
-                            collaboration_keywords_found: app.collaboration_keywords_found ? app.collaboration_keywords_found.join(', ') : '',
-                            has_multiple_barriers: app.has_multiple_barriers ? 'Yes' : 'No',
-                            has_governance_signal: app.has_governance_signal ? 'Yes' : 'No',
-                            has_multiple_governance_signals: app.has_multiple_governance_signals ? 'Yes' : 'No',
-                            expresses_regional_interest: app.expresses_regional_interest ? 'Yes' : 'No'
-                        })
-                    ));
-                }
-
+                // ...existing code...
                 container.innerHTML = html;
             })
             .catch(err => {
