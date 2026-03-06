@@ -2,1167 +2,2162 @@
   "full_analysis": {
     "analysis_date": "2026-03-06T03:00:00.000Z",
     "total_applicants": 94,
-    "analysis_scope": {
-      "program": "ASEAN Coastal Leaders Program",
-      "data_source": "Google Sheets - ASEAN program - Responses",
-      "valid_applicants": 94,
-      "applicants_with_substantive_text": 66,
-      "applicants_with_minimal_text": 28
-    },
     "metrics_summary": {
-      "metric_1_cross_border_issue_convergence": {
-        "description": "Percentage of applicants mentioning at least 2 of the top 3 barriers",
-        "numerator": 60,
-        "denominator": 94,
-        "percentage": 63.8,
-        "top_3_barriers": [
+      "metric_1_barriers": {
+        "top_barriers": [
           {
-            "rank": 1,
-            "barrier": "Weak Capacity",
-            "count": 64,
-            "percentage_of_applicants": 68.1,
-            "definition": "Limited technical skills, knowledge, resources, or institutional capacity to address coastal challenges"
-          },
-          {
-            "rank": 2,
-            "barrier": "Exclusion from Decision-Making",
-            "count": 59,
-            "percentage_of_applicants": 62.8,
-            "definition": "Marginalized communities, women, youth, or grassroots leaders excluded from governance and policy processes"
-          },
-          {
-            "rank": 3,
-            "barrier": "Climate Impacts",
-            "count": 24,
-            "percentage_of_applicants": 25.5,
-            "definition": "Climate change effects on fisheries, livelihoods, and coastal ecosystems"
-          }
-        ],
-        "all_barriers_detected": [
-          {
-            "barrier": "Weak Capacity",
+            "barrier": "Gender-related",
             "count": 64,
             "percentage": 68.1
           },
           {
-            "barrier": "Exclusion from Decision-Making",
-            "count": 59,
-            "percentage": 62.8
+            "barrier": "Technology/Connectivity",
+            "count": 32,
+            "percentage": 34.0
           },
           {
-            "barrier": "Climate Impacts",
+            "barrier": "Time/Scheduling",
             "count": 24,
             "percentage": 25.5
           },
           {
-            "barrier": "Weak Enforcement",
-            "count": 24,
-            "percentage": 25.5
+            "barrier": "Dietary",
+            "count": 14,
+            "percentage": 14.9
           },
           {
-            "barrier": "Pollution",
-            "count": 18,
-            "percentage": 19.1
+            "barrier": "Communication/Language",
+            "count": 14,
+            "percentage": 14.9
           },
           {
-            "barrier": "Market Exploitation",
-            "count": 15,
-            "percentage": 16.0
-          },
-          {
-            "barrier": "Limited Finance",
-            "count": 12,
-            "percentage": 12.8
-          },
-          {
-            "barrier": "Limited Technology",
+            "barrier": "Mobility/Accessibility",
             "count": 11,
             "percentage": 11.7
           },
           {
-            "barrier": "Overfishing",
+            "barrier": "Health",
+            "count": 11,
+            "percentage": 11.7
+          },
+          {
+            "barrier": "Visa/Travel",
+            "count": 6,
+            "percentage": 6.4
+          },
+          {
+            "barrier": "Financial",
+            "count": 3,
+            "percentage": 3.2
+          },
+          {
+            "barrier": "Other",
+            "count": 2,
+            "percentage": 2.1
+          }
+        ],
+        "applicants_with_1_barrier": 69,
+        "percentage_with_1_barrier": 73.4,
+        "applicants_with_2_barriers": 57,
+        "percentage_with_2_barriers": 60.6,
+        "applicants_with_3_barriers": 35,
+        "percentage_with_3_barriers": 37.2,
+        "applicants_with_5_plus_barriers": 8,
+        "percentage_with_5_plus_barriers": 8.5,
+        "applicants_mentioning_multiple_barriers": 57,
+        "percentage_with_multiple": 60.6
+      },
+      "metric_3_engagement": {
+        "government_employees": 12,
+        "percentage_government": 12.8,
+        "non_government": 71,
+        "percentage_non_government": 75.5,
+        "blank_government_status": 11,
+        "percentage_blank": 11.7,
+        "applicants_with_governance_signal": 58,
+        "percentage_with_signal": 61.7,
+        "applicants_with_multiple_signals": 58,
+        "percentage_with_multiple_signals": 61.7,
+        "applicant_groups": {
+          "coastal_community_innovator_business_leader": {
+            "count": 26,
+            "percentage": 27.7
+          },
+          "women_led_or_youth_led_group": {
+            "count": 23,
+            "percentage": 24.5
+          },
+          "small_scale_fisher_fisherfolk_cooperative": {
+            "count": 15,
+            "percentage": 16.0
+          },
+          "other_coastal_community_leader": {
+            "count": 15,
+            "percentage": 16.0
+          },
+          "not_specified": {
+            "count": 8,
+            "percentage": 8.5
+          },
+          "none_of_the_above": {
             "count": 5,
             "percentage": 5.3
           },
-          {
-            "barrier": "Habitat Loss",
-            "count": 4,
-            "percentage": 4.3
+          "indigenous_person_customary_knowledge_holder": {
+            "count": 2,
+            "percentage": 2.1
           }
-        ],
-        "country_breakdown": [
-          {
-            "country": "Indonesia",
-            "n_applicants": 45,
-            "weak_capacity_count": 35,
-            "weak_capacity_pct": 77.8,
-            "exclusion_count": 32,
-            "exclusion_pct": 71.1,
-            "climate_count": 13,
-            "climate_pct": 28.9,
-            "convergence_count": 32,
-            "convergence_pct": 71.1
-          },
-          {
-            "country": "Philippines",
-            "n_applicants": 25,
-            "weak_capacity_count": 15,
-            "weak_capacity_pct": 60.0,
-            "exclusion_count": 16,
-            "exclusion_pct": 64.0,
-            "climate_count": 5,
-            "climate_pct": 20.0,
-            "convergence_count": 15,
-            "convergence_pct": 60.0
-          },
-          {
-            "country": "Malaysia",
-            "n_applicants": 7,
-            "weak_capacity_count": 6,
-            "weak_capacity_pct": 85.7,
-            "exclusion_count": 6,
-            "exclusion_pct": 85.7,
-            "climate_count": 3,
-            "climate_pct": 42.9,
-            "convergence_count": 6,
-            "convergence_pct": 85.7
-          },
-          {
-            "country": "Thailand",
-            "n_applicants": 3,
-            "weak_capacity_count": 3,
-            "weak_capacity_pct": 100.0,
-            "exclusion_count": 2,
-            "exclusion_pct": 66.7,
-            "climate_count": 1,
-            "climate_pct": 33.3,
-            "convergence_count": 3,
-            "convergence_pct": 100.0
-          },
-          {
-            "country": "Vietnam",
-            "n_applicants": 4,
-            "weak_capacity_count": 3,
-            "weak_capacity_pct": 75.0,
-            "exclusion_count": 2,
-            "exclusion_pct": 50.0,
-            "climate_count": 1,
-            "climate_pct": 25.0,
-            "convergence_count": 2,
-            "convergence_pct": 50.0
-          },
-          {
-            "country": "Timor-Leste",
-            "n_applicants": 2,
-            "weak_capacity_count": 1,
-            "weak_capacity_pct": 50.0,
-            "exclusion_count": 1,
-            "exclusion_pct": 50.0,
-            "climate_count": 0,
-            "climate_pct": 0.0,
-            "convergence_count": 1,
-            "convergence_pct": 50.0
-          },
-          {
-            "country": "Myanmar",
-            "n_applicants": 1,
-            "weak_capacity_count": 1,
-            "weak_capacity_pct": 100.0,
-            "exclusion_count": 0,
-            "exclusion_pct": 0.0,
-            "climate_count": 1,
-            "climate_pct": 100.0,
-            "convergence_count": 1,
-            "convergence_pct": 100.0
-          },
-          {
-            "country": "Other",
-            "n_applicants": 7,
-            "weak_capacity_count": 0,
-            "weak_capacity_pct": 0.0,
-            "exclusion_count": 0,
-            "exclusion_pct": 0.0,
-            "climate_count": 0,
-            "climate_pct": 0.0,
-            "convergence_count": 0,
-            "convergence_pct": 0.0
-          }
-        ],
-        "example_snippets": [
-          {
-            "applicant_id": "Applicant_2",
-            "country": "Philippines",
-            "snippet": "these two jobs are constantly threatened by the dynamic shifts in climate change and economic instability, which directly affects our coastal communities, leading to job insecurity among many family members... marginalized areas... if our community members are informed on better ocean resource utilization and empowered on better fishing technologies...",
-            "barriers_triggered": ["Weak Capacity", "Exclusion from Decision-Making", "Climate Impacts"]
-          },
-          {
-            "applicant_id": "Applicant_8",
-            "country": "Philippines",
-            "snippet": "building an inclusive and sustainable blue economy by empowering maritime leaders to become ocean stewards... maritime industries directly impact marine ecosystems... maritime leaders are at the top potential of our house...",
-            "barriers_triggered": ["Weak Capacity", "Exclusion from Decision-Making"]
-          },
-          {
-            "applicant_id": "Applicant_12",
-            "country": "Indonesia",
-            "snippet": "sustainable fisheries and also the three big elements in the program is on fisheries governance second is on the market access and the third on community development... coastal communities... they are able to manage the stocks...",
-            "barriers_triggered": ["Weak Capacity", "Weak Enforcement", "Market Exploitation"]
-          }
-        ]
+        }
       },
-      "metric_2_replicable_model_density": {
-        "description": "Percentage of applicants implementing replicable solution models",
-        "at_least_one_model": {
-          "numerator": 66,
-          "denominator": 94,
-          "percentage": 70.2
-        },
-        "at_least_two_models": {
-          "numerator": 49,
-          "denominator": 94,
-          "percentage": 52.1
-        },
-        "model_types_detected": [
-          {
-            "model": "Community Enterprise",
-            "count": 50,
-            "percentage": 53.2,
-            "definition": "Community-based businesses, cooperatives, or livelihood enterprises"
+      "metric_4_collaboration": {
+        "applicants_expressing_regional_interest": 61,
+        "percentage_interested": 64.9,
+        "regional_interest_by_country": {
+          "Myanmar": {
+            "total_applicants": 1,
+            "collaboration_interest": 1,
+            "percentage": 100.0
           },
-          {
-            "model": "Traceability/Digital Tools",
-            "count": 24,
-            "percentage": 25.5,
-            "definition": "Digital systems for fisheries traceability, monitoring, or data collection"
+          "Thailand": {
+            "total_applicants": 3,
+            "collaboration_interest": 3,
+            "percentage": 100.0
           },
-          {
-            "model": "Mangrove Restoration",
-            "count": 21,
-            "percentage": 22.3,
-            "definition": "Mangrove planting, restoration, or conservation initiatives"
+          "Malaysia": {
+            "total_applicants": 7,
+            "collaboration_interest": 6,
+            "percentage": 85.7
           },
-          {
-            "model": "Citizen Monitoring",
-            "count": 21,
-            "percentage": 22.3,
-            "definition": "Community-based monitoring, data collection, or surveillance systems"
+          "Vietnam": {
+            "total_applicants": 4,
+            "collaboration_interest": 3,
+            "percentage": 75.0
           },
-          {
-            "model": "Ecotourism",
-            "count": 17,
-            "percentage": 18.1,
-            "definition": "Sustainable tourism initiatives for coastal/marine conservation"
+          "Indonesia": {
+            "total_applicants": 45,
+            "collaboration_interest": 34,
+            "percentage": 75.6
           },
-          {
-            "model": "Community-Managed MPAs",
-            "count": 15,
-            "percentage": 16.0,
-            "definition": "Community-managed marine protected areas or fishing zones"
+          "Timor-Leste": {
+            "total_applicants": 2,
+            "collaboration_interest": 1,
+            "percentage": 50.0
           },
-          {
-            "model": "Aquaculture Improvements",
-            "count": 8,
-            "percentage": 8.5,
-            "definition": "Sustainable aquaculture practices or improvements"
+          "Philippines": {
+            "total_applicants": 25,
+            "collaboration_interest": 13,
+            "percentage": 52.0
           },
-          {
-            "model": "Bycatch Mitigation",
-            "count": 3,
-            "percentage": 3.2,
-            "definition": "Techniques to reduce bycatch or non-target species capture"
+          "Other": {
+            "total_applicants": 7,
+            "collaboration_interest": 0,
+            "percentage": 0.0
           }
-        ],
-        "country_breakdown": [
-          {
-            "country": "Indonesia",
-            "n_applicants": 45,
-            "at_least_one_count": 36,
-            "at_least_one_pct": 80.0,
-            "at_least_two_count": 27,
-            "at_least_two_pct": 60.0
-          },
-          {
-            "country": "Malaysia",
-            "n_applicants": 7,
-            "at_least_one_count": 7,
-            "at_least_one_pct": 100.0,
-            "at_least_two_count": 6,
-            "at_least_two_pct": 85.7
-          },
-          {
-            "country": "Philippines",
-            "n_applicants": 25,
-            "at_least_one_count": 15,
-            "at_least_one_pct": 60.0,
-            "at_least_two_count": 11,
-            "at_least_two_pct": 44.0
-          },
-          {
-            "country": "Thailand",
-            "n_applicants": 3,
-            "at_least_one_count": 3,
-            "at_least_one_pct": 100.0,
-            "at_least_two_count": 2,
-            "at_least_two_pct": 66.7
-          },
-          {
-            "country": "Vietnam",
-            "n_applicants": 4,
-            "at_least_one_count": 3,
-            "at_least_one_pct": 75.0,
-            "at_least_two_count": 2,
-            "at_least_two_pct": 50.0
-          },
-          {
-            "country": "Timor-Leste",
-            "n_applicants": 2,
-            "at_least_one_count": 1,
-            "at_least_one_pct": 50.0,
-            "at_least_two_count": 1,
-            "at_least_two_pct": 50.0
-          },
-          {
-            "country": "Myanmar",
-            "n_applicants": 1,
-            "at_least_one_count": 1,
-            "at_least_one_pct": 100.0,
-            "at_least_two_count": 0,
-            "at_least_two_pct": 0.0
-          },
-          {
-            "country": "Other",
-            "n_applicants": 7,
-            "at_least_one_count": 0,
-            "at_least_one_pct": 0.0,
-            "at_least_two_count": 0,
-            "at_least_two_pct": 0.0
-          }
-        ],
-        "example_snippets": [
-          {
-            "applicant_id": "Applicant_6",
-            "country": "Indonesia",
-            "snippet": "coastal livelihood and water pollution... small scale fisheries and tourism are important source of income... we support the participation them by ensuring they are actively involved in decision-making processes... women and youth to join meetings, contribute their perspectives, and take leadership roles in monitoring and awareness activities... young people were trained to collect basic marine data...",
-            "models_triggered": ["Community Enterprise", "Citizen Monitoring"]
-          },
-          {
-            "applicant_id": "Applicant_7",
-            "country": "Indonesia",
-            "snippet": "ocean pollution is not only the environmental issues it directly affects the health small scale fisheries marine tourism and food security... livelihood and dignity are also at risk... we focus on promoting or empowering local women via promoting the OCOP, one community, one product... re plant more mangroof forest via the educational community based tourism activities...",
-            "models_triggered": ["Community Enterprise", "Mangrove Restoration", "Ecotourism"]
-          },
-          {
-            "applicant_id": "Applicant_10",
-            "country": "Indonesia",
-            "snippet": "coastal livelihood sustainable fisheries and marine protected area or mps because these three pillars are inspirable... sustainable fisheries leadership... ocean conservation... I am the senior conservation and innovation expert for marine and fisheries program... more than 25 years of experience...",
-            "models_triggered": ["Community-Managed MPAs", "Community Enterprise"]
-          }
-        ]
+        }
       },
-      "metric_3_policy_engagement_penetration": {
-        "description": "Percentage of applicants with governance/policy engagement signals",
-        "any_governance_signal": {
-          "numerator": 60,
-          "denominator": 94,
-          "percentage": 63.8
+      "ocean_issue_focus": {
+        "sustainable_fisheries": {
+          "count": 28,
+          "percentage": 29.8
         },
-        "strong_engagement_3_plus_keywords": {
-          "numerator": 30,
-          "denominator": 94,
-          "percentage": 31.9
+        "other_unspecified_mixed": {
+          "count": 29,
+          "percentage": 30.9
         },
-        "governance_keywords_tracked": [
-          "government",
-          "ministry",
-          "policy",
-          "regulation",
-          "council",
-          "co-management",
-          "ordinance",
-          "customary law",
-          "legislation",
-          "enforcement",
-          "municipal",
-          "provincial",
-          "national",
-          "law",
-          "decree",
-          "bylaw",
-          "local government"
-        ],
-        "country_breakdown": [
-          {
-            "country": "Indonesia",
-            "n_applicants": 45,
-            "any_signal_count": 33,
-            "any_signal_pct": 73.3,
-            "strong_engagement_count": 18,
-            "strong_engagement_pct": 40.0
-          },
-          {
-            "country": "Philippines",
-            "n_applicants": 25,
-            "any_signal_count": 15,
-            "any_signal_pct": 60.0,
-            "strong_engagement_count": 7,
-            "strong_engagement_pct": 28.0
-          },
-          {
-            "country": "Malaysia",
-            "n_applicants": 7,
-            "any_signal_count": 5,
-            "any_signal_pct": 71.4,
-            "strong_engagement_count": 2,
-            "strong_engagement_pct": 28.6
-          },
-          {
-            "country": "Vietnam",
-            "n_applicants": 4,
-            "any_signal_count": 3,
-            "any_signal_pct": 75.0,
-            "strong_engagement_count": 1,
-            "strong_engagement_pct": 25.0
-          },
-          {
-            "country": "Thailand",
-            "n_applicants": 3,
-            "any_signal_count": 2,
-            "any_signal_pct": 66.7,
-            "strong_engagement_count": 0,
-            "strong_engagement_pct": 0.0
-          },
-          {
-            "country": "Timor-Leste",
-            "n_applicants": 2,
-            "any_signal_count": 1,
-            "any_signal_pct": 50.0,
-            "strong_engagement_count": 1,
-            "strong_engagement_pct": 50.0
-          },
-          {
-            "country": "Myanmar",
-            "n_applicants": 1,
-            "any_signal_count": 1,
-            "any_signal_pct": 100.0,
-            "strong_engagement_count": 1,
-            "strong_engagement_pct": 100.0
-          },
-          {
-            "country": "Other",
-            "n_applicants": 7,
-            "any_signal_count": 0,
-            "any_signal_pct": 0.0,
-            "strong_engagement_count": 0,
-            "strong_engagement_pct": 0.0
-          }
-        ],
-        "example_snippets": [
-          {
-            "applicant_id": "Applicant_7",
-            "country": "Indonesia",
-            "snippet": "ocean pollution is not only the environmental issues it directly affects the health small scale fisheries marine tourism and food security... government and the private sector should intensify their support... collaboration and cooperation... government units and private entities... grassroots leaders... government and local communities consistent law enforcement...",
-            "governance_keywords_found": ["government", "law enforcement", "collaboration"]
-          },
-          {
-            "applicant_id": "Applicant_9",
-            "country": "Indonesia",
-            "snippet": "sustainable marine and fisheries resource... government and the community... law enforcement by the government... local communities consistent law enforcement... government and the community for 16 years i have worked closely with the government and local communities...",
-            "governance_keywords_found": ["government", "law enforcement", "community"]
-          },
-          {
-            "applicant_id": "Applicant_10",
-            "country": "Indonesia",
-            "snippet": "marine protected area or mps... sustainable fisheries leadership... ocean conservation and sustainable fisheries... coastal livelihood sustainable fisheries... marine protected area... fisheries program... conservation and innovation expert for marine and fisheries program...",
-            "governance_keywords_found": ["marine protected area", "fisheries", "program"]
-          }
-        ]
+        "coastal_livelihoods_blue_economy": {
+          "count": 16,
+          "percentage": 17.0
+        },
+        "marine_protected_areas": {
+          "count": 11,
+          "percentage": 11.7
+        },
+        "climate_change_adaptation": {
+          "count": 7,
+          "percentage": 7.4
+        },
+        "mangroves_ecosystems": {
+          "count": 2,
+          "percentage": 2.1
+        },
+        "pollution_plastic": {
+          "count": 1,
+          "percentage": 1.1
+        }
       },
-      "metric_4_peer_learning_and_regional_demand": {
-        "description": "Percentage of applicants expressing explicit cross-country engagement interest",
-        "explicit_cross_country_engagement": {
-          "numerator": 62,
-          "denominator": 94,
-          "percentage": 66.0
+      "gender_breakdown": {
+        "man": {
+          "count": 44,
+          "percentage": 46.8
         },
-        "peer_learning_keywords_tracked": [
-          "ASEAN",
-          "regional",
-          "cross-border",
-          "peer learning",
-          "exchange",
-          "network",
-          "collaboration",
-          "platform",
-          "partnership",
-          "knowledge sharing",
-          "south-south",
-          "transboundary",
-          "international",
-          "global",
-          "connect",
-          "learn from"
-        ],
-        "country_breakdown": [
-          {
-            "country": "Indonesia",
-            "n_applicants": 45,
-            "peer_learning_count": 35,
-            "peer_learning_pct": 77.8
-          },
-          {
-            "country": "Malaysia",
-            "n_applicants": 7,
-            "peer_learning_count": 7,
-            "peer_learning_pct": 100.0
-          },
-          {
-            "country": "Philippines",
-            "n_applicants": 25,
-            "peer_learning_count": 13,
-            "peer_learning_pct": 52.0
-          },
-          {
-            "country": "Thailand",
-            "n_applicants": 3,
-            "peer_learning_count": 3,
-            "peer_learning_pct": 100.0
-          },
-          {
-            "country": "Vietnam",
-            "n_applicants": 4,
-            "peer_learning_count": 2,
-            "peer_learning_pct": 50.0
-          },
-          {
-            "country": "Timor-Leste",
-            "n_applicants": 2,
-            "peer_learning_count": 1,
-            "peer_learning_pct": 50.0
-          },
-          {
-            "country": "Myanmar",
-            "n_applicants": 1,
-            "peer_learning_count": 1,
-            "peer_learning_pct": 100.0
-          },
-          {
-            "country": "Other",
-            "n_applicants": 7,
-            "peer_learning_count": 0,
-            "peer_learning_pct": 0.0
-          }
-        ],
-        "example_snippets": [
-          {
-            "applicant_id": "Applicant_2",
-            "country": "Philippines",
-            "snippet": "I am interested because I wanted to further my cause in ocean stewardship by immersing myself in different cultures and discourse around the world... this event is an opportunity for me to network and help build connections... improve my skills in project management through the ASEAN Coastal Leaders Program by interacting and sharing knowledge with people from diverse backgrounds...",
-            "collaboration_keywords_found": ["network", "ASEAN", "knowledge sharing", "collaboration"]
-          },
-          {
-            "applicant_id": "Applicant_3",
-            "country": "Thailand",
-            "snippet": "I want to strengthen my leadership skills and expand my knowledge in coastal and marine conservation... I would like to learn new strategies, tools, and best practices from other coastal leaders across ASEAN... exchange experiences, understand different approaches to solving coastal challenges, and build a regional network of leaders who share the same passion...",
-            "collaboration_keywords_found": ["ASEAN", "regional", "exchange", "network", "peer learning"]
-          },
-          {
-            "applicant_id": "Applicant_6",
-            "country": "Indonesia",
-            "snippet": "I want to strengthen my leadership skills and expand my knowledge in coastal and marine conservation... I have been working closely with my community, small-scale fishers, and government agencies... I would like to learn new strategies, tools, and best practices from other coastal leaders across ASEAN... exchange experiences, understand different approaches...",
-            "collaboration_keywords_found": ["ASEAN", "exchange", "knowledge", "collaboration"]
-          }
-        ]
-      },
-      "metric_5_leadership_connectivity_gap": {
-        "description": "Percentage of applicants ready but structurally disconnected (isolation + governance + peer learning)",
-        "has_isolation_language": {
-          "numerator": 41,
-          "denominator": 94,
+        "woman": {
+          "count": 41,
           "percentage": 43.6
         },
-        "connectivity_gap_ready_but_disconnected": {
-          "numerator": 34,
-          "denominator": 94,
-          "percentage": 36.2
+        "non_binary_gender_diverse": {
+          "count": 5,
+          "percentage": 5.3
         },
-        "connectivity_gap_definition": "Applicants showing ALL THREE signals: (1) isolation language, (2) policy engagement (≥1 governance keyword), (3) peer-learning demand (≥2 peer keywords). Represents leaders with demonstrated capacity and ambition but facing structural barriers to visibility and support.",
-        "isolation_keywords_tracked": [
-          "underrepresented",
-          "marginalized",
-          "excluded",
-          "lack of funding",
-          "limited access",
-          "isolated",
-          "need visibility",
-          "no platform",
-          "underserved",
-          "invisible",
-          "not heard",
-          "limited resources",
-          "no support",
-          "forgotten"
-        ],
-        "country_breakdown": [
-          {
-            "country": "Indonesia",
-            "n_applicants": 45,
-            "has_isolation_count": 23,
-            "has_isolation_pct": 51.1,
-            "connectivity_gap_count": 20,
-            "connectivity_gap_pct": 44.4
-          },
-          {
-            "country": "Philippines",
-            "n_applicants": 25,
-            "has_isolation_count": 12,
-            "has_isolation_pct": 48.0,
-            "connectivity_gap_count": 9,
-            "connectivity_gap_pct": 36.0
-          },
-          {
-            "country": "Malaysia",
-            "n_applicants": 7,
-            "has_isolation_count": 3,
-            "has_isolation_pct": 42.9,
-            "connectivity_gap_count": 3,
-            "connectivity_gap_pct": 42.9
-          },
-          {
-            "country": "Thailand",
-            "n_applicants": 3,
-            "has_isolation_count": 2,
-            "has_isolation_pct": 66.7,
-            "connectivity_gap_count": 1,
-            "connectivity_gap_pct": 33.3
-          },
-          {
-            "country": "Vietnam",
-            "n_applicants": 4,
-            "has_isolation_count": 1,
-            "has_isolation_pct": 25.0,
-            "connectivity_gap_count": 1,
-            "connectivity_gap_pct": 25.0
-          },
-          {
-            "country": "Timor-Leste",
-            "n_applicants": 2,
-            "has_isolation_count": 0,
-            "has_isolation_pct": 0.0,
-            "connectivity_gap_count": 0,
-            "connectivity_gap_pct": 0.0
-          },
-          {
-            "country": "Myanmar",
-            "n_applicants": 1,
-            "has_isolation_count": 0,
-            "has_isolation_pct": 0.0,
-            "connectivity_gap_count": 0,
-            "connectivity_gap_pct": 0.0
-          },
-          {
-            "country": "Other",
-            "n_applicants": 7,
-            "has_isolation_count": 0,
-            "has_isolation_pct": 0.0,
-            "connectivity_gap_count": 0,
-            "connectivity_gap_pct": 0.0
-          }
-        ],
-        "example_snippets": [
-          {
-            "applicant_id": "Applicant_2",
-            "country": "Philippines",
-            "snippet": "marginalized areas... lack of financial support and cooperation by involved stakeholders, particularly the government units and private entities... If grassroots leaders who start early are given the chance to work with many people, their impact would be greater... I am interested because I wanted to further my cause in ocean stewardship by immersing myself in different cultures... this event is an opportunity for me to network and help build connections... improve my skills in project management through the ASEAN Coastal Leaders Program by interacting and sharing knowledge with people from diverse backgrounds...",
-            "signals_present": ["isolation", "governance", "peer_learning"]
-          },
-          {
-            "applicant_id": "Applicant_6",
-            "country": "Indonesia",
-            "snippet": "marginalized communities... lack of financial support... Governments and institutions should actively include grassroots representatives in decision-making processes... Supporting their leadership and creating safe spaces for dialogue... I want to strengthen my leadership skills and expand my knowledge in coastal and marine conservation... learn new strategies, tools, and best practices from other coastal leaders across ASEAN... exchange experiences, understand different approaches...",
-            "signals_present": ["isolation", "governance", "peer_learning"]
-          },
-          {
-            "applicant_id": "Applicant_11",
-            "country": "Philippines",
-            "snippet": "women young people in gender minorities are taking part in sustaining their livelihoods... need visibility... no platform... I want to strengthen my leadership skills and expand my knowledge... learn new strategies, tools, and best practices from other coastal leaders across ASEAN... exchange experiences, understand different approaches to solving coastal challenges, and build a regional network...",
-            "signals_present": ["isolation", "governance", "peer_learning"]
-          }
-        ]
+        "prefer_not_to_say": {
+          "count": 3,
+          "percentage": 3.2
+        },
+        "not_specified": {
+          "count": 1,
+          "percentage": 1.1
+        }
+      },
+      "country_breakdown": {
+        "Indonesia": {
+          "count": 45,
+          "percentage": 47.9
+        },
+        "Philippines": {
+          "count": 25,
+          "percentage": 26.6
+        },
+        "Malaysia": {
+          "count": 7,
+          "percentage": 7.4
+        },
+        "Other": {
+          "count": 7,
+          "percentage": 7.4
+        },
+        "Vietnam": {
+          "count": 4,
+          "percentage": 4.3
+        },
+        "Thailand": {
+          "count": 3,
+          "percentage": 3.2
+        },
+        "Timor-Leste": {
+          "count": 2,
+          "percentage": 2.1
+        },
+        "Myanmar": {
+          "count": 1,
+          "percentage": 1.1
+        }
+      },
+      "eligibility_metrics": {
+        "lives_works_in_coastal_community": {
+          "yes": 86,
+          "percentage_yes": 91.5,
+          "no": 1,
+          "percentage_no": 1.1,
+          "blank": 7,
+          "percentage_blank": 7.4
+        },
+        "not_government_employee": {
+          "yes": 71,
+          "percentage_yes": 75.5,
+          "no": 12,
+          "percentage_no": 12.8,
+          "blank": 11,
+          "percentage_blank": 11.7
+        },
+        "3_plus_years_experience": {
+          "yes": 71,
+          "percentage_yes": 75.5,
+          "no": 2,
+          "percentage_no": 2.1,
+          "blank": 21,
+          "percentage_blank": 22.3
+        },
+        "leader_representative": {
+          "yes": 71,
+          "percentage_yes": 75.5,
+          "no": 1,
+          "percentage_no": 1.1,
+          "blank": 22,
+          "percentage_blank": 23.4
+        },
+        "functional_english": {
+          "yes": 70,
+          "percentage_yes": 74.5,
+          "no": 2,
+          "percentage_no": 2.1,
+          "blank": 22,
+          "percentage_blank": 23.4
+        },
+        "commitment_to_all_activities": {
+          "yes": 69,
+          "percentage_yes": 73.4,
+          "no": 0,
+          "percentage_no": 0.0,
+          "blank": 25,
+          "percentage_blank": 26.6
+        },
+        "valid_passport": {
+          "yes": 68,
+          "percentage_yes": 72.3,
+          "no": 3,
+          "percentage_no": 3.2,
+          "blank": 23,
+          "percentage_blank": 24.5
+        },
+        "total_eligible": 67,
+        "percentage_eligible": 71.3,
+        "total_ineligible": 27,
+        "percentage_ineligible": 28.7
       }
     },
     "applicants": [
       {
         "applicant_id": 1,
-        "country": "Indonesia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": true,
-          "weak_enforcement": true,
-          "market_exploitation": true,
-          "pollution": true,
-          "habitat_loss": false,
-          "limited_finance": true,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 7
-        },
-        "models": {
-          "community_mpa": true,
-          "mangrove_restoration": true,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": true,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": true,
-          "total_models": 5
-        },
-        "governance_engagement": {
-          "signal_count": 4,
-          "has_any_signal": true,
-          "has_strong_engagement": true
-        },
-        "peer_learning": {
-          "signal_count": 3,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 2,
-          "has_isolation": true
-        },
-        "connectivity_gap": true
+        "name": "Ralph Jasil E. Escanillas",
+        "country": "Philippines",
+        "organization": "JCI Antique Kruhay",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "ralphescanillas@gmail.com",
+        "submission_date": "2026-03-01"
       },
       {
         "applicant_id": 2,
-        "country": "Philippines",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": true,
-          "weak_enforcement": false,
-          "market_exploitation": false,
-          "pollution": false,
-          "habitat_loss": false,
-          "limited_finance": true,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 4
-        },
-        "models": {
-          "community_mpa": false,
-          "mangrove_restoration": false,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": false,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": false,
-          "total_models": 1
-        },
-        "governance_engagement": {
-          "signal_count": 2,
-          "has_any_signal": true,
-          "has_strong_engagement": false
-        },
-        "peer_learning": {
-          "signal_count": 4,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 3,
-          "has_isolation": true
-        },
-        "connectivity_gap": true
+        "name": "Asma Thisa",
+        "country": "Thailand",
+        "organization": "Sustainable development foundation",
+        "gender": "Woman",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "asma.thisa@gmail.com",
+        "submission_date": "2026-02-28"
       },
       {
         "applicant_id": 3,
-        "country": "Thailand",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": true,
-          "weak_enforcement": true,
-          "market_exploitation": false,
-          "pollution": true,
-          "habitat_loss": true,
-          "limited_finance": false,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 6
-        },
-        "models": {
-          "community_mpa": true,
-          "mangrove_restoration": true,
-          "traceability_digital": true,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": true,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": false,
-          "total_models": 5
-        },
-        "governance_engagement": {
-          "signal_count": 1,
-          "has_any_signal": true,
-          "has_strong_engagement": false
-        },
-        "peer_learning": {
-          "signal_count": 5,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 1,
-          "has_isolation": true
-        },
-        "connectivity_gap": false
+        "name": "Nguyen Thi Thu Thuy",
+        "country": "Vietnam",
+        "organization": "University of Economics HCMC",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "kathynguyen3110@gmail.com",
+        "submission_date": "2026-02-27"
       },
       {
         "applicant_id": 4,
-        "country": "Indonesia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": true,
-          "climate_impacts": false,
-          "weak_enforcement": true,
-          "market_exploitation": true,
-          "pollution": true,
-          "habitat_loss": false,
-          "limited_finance": true,
-          "exclusion_decision_making": true,
-          "limited_technology": true,
-          "weak_capacity": true,
-          "total_barriers": 8
-        },
-        "models": {
-          "community_mpa": true,
-          "mangrove_restoration": false,
-          "traceability_digital": true,
-          "bycatch_mitigation": true,
-          "community_enterprise": true,
-          "ecotourism": false,
-          "aquaculture_improvements": true,
-          "citizen_monitoring": true,
-          "total_models": 6
-        },
-        "governance_engagement": {
-          "signal_count": 5,
-          "has_any_signal": true,
-          "has_strong_engagement": true
-        },
-        "peer_learning": {
-          "signal_count": 3,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 2,
-          "has_isolation": true
-        },
-        "connectivity_gap": true
+        "name": "Virgilio N. Chua",
+        "country": "Philippines",
+        "organization": "Tagum City Fisheries Council",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "virgiliochua15@gmail.com",
+        "submission_date": "2026-02-27"
       },
       {
         "applicant_id": 5,
-        "country": "Malaysia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": true,
-          "weak_enforcement": true,
-          "market_exploitation": false,
-          "pollution": true,
-          "habitat_loss": false,
-          "limited_finance": false,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 5
-        },
-        "models": {
-          "community_mpa": true,
-          "mangrove_restoration": true,
-          "traceability_digital": true,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": true,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": true,
-          "total_models": 6
-        },
-        "governance_engagement": {
-          "signal_count": 3,
-          "has_any_signal": true,
-          "has_strong_engagement": true
-        },
-        "peer_learning": {
-          "signal_count": 4,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 1,
-          "has_isolation": true
-        },
-        "connectivity_gap": true
+        "name": "Annisa Dewantari",
+        "country": "Indonesia",
+        "organization": "YSC Indonesia",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "annisadewantari57@gmail.com",
+        "submission_date": "2026-02-26"
       },
       {
         "applicant_id": 6,
+        "name": "Shinta Adelia Sukma",
         "country": "Indonesia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": false,
-          "weak_enforcement": false,
-          "market_exploitation": false,
-          "pollution": true,
-          "habitat_loss": false,
-          "limited_finance": true,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 4
-        },
-        "models": {
-          "community_mpa": false,
-          "mangrove_restoration": false,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": true,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": true,
-          "total_models": 3
-        },
-        "governance_engagement": {
-          "signal_count": 2,
-          "has_any_signal": true,
-          "has_strong_engagement": false
-        },
-        "peer_learning": {
-          "signal_count": 3,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 2,
-          "has_isolation": true
-        },
-        "connectivity_gap": true
+        "organization": "Sagara Cita Indonesia Foundation",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "shintaadels01@gmail.com",
+        "submission_date": "2026-02-26"
       },
       {
         "applicant_id": 7,
-        "country": "Indonesia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": false,
-          "weak_enforcement": true,
-          "market_exploitation": false,
-          "pollution": true,
-          "habitat_loss": false,
-          "limited_finance": false,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 4
-        },
-        "models": {
-          "community_mpa": false,
-          "mangrove_restoration": true,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": true,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": false,
-          "total_models": 3
-        },
-        "governance_engagement": {
-          "signal_count": 4,
-          "has_any_signal": true,
-          "has_strong_engagement": true
-        },
-        "peer_learning": {
-          "signal_count": 2,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 1,
-          "has_isolation": true
-        },
-        "connectivity_gap": true
+        "name": "Harold Lagsub Banggay",
+        "country": "Philippines",
+        "organization": "MariKnows Philippines",
+        "gender": "Non-binary",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "Haroldbangs@gmail.com",
+        "submission_date": "2026-02-26"
       },
       {
         "applicant_id": 8,
-        "country": "Philippines",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": false,
-          "weak_enforcement": false,
-          "market_exploitation": false,
-          "pollution": false,
-          "habitat_loss": false,
-          "limited_finance": false,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 2
-        },
-        "models": {
-          "community_mpa": false,
-          "mangrove_restoration": false,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": false,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": false,
-          "total_models": 1
-        },
-        "governance_engagement": {
-          "signal_count": 1,
-          "has_any_signal": true,
-          "has_strong_engagement": false
-        },
-        "peer_learning": {
-          "signal_count": 2,
-          "has_peer_learning": true
-        },
-        "isolation": {
-          "signal_count": 0,
-          "has_isolation": false
-        },
-        "connectivity_gap": false
+        "name": "Muhammad Yusuf Rumaida",
+        "country": "Indonesia",
+        "organization": "Konservasi Indonesia",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "rumaidayusuf@gmail.com",
+        "submission_date": "2026-02-26"
       },
       {
         "applicant_id": 9,
+        "name": "Imam Musthofa Zainudin",
         "country": "Indonesia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": true,
-          "weak_enforcement": true,
-          "market_exploitation": false,
-          "pollution": false,
-          "habitat_loss": false,
-          "limited_finance": false,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 4
-        },
-        "models": {
-          "community_mpa": true,
-          "mangrove_restoration": false,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": false,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": false,
-          "total_models": 2
-        },
-        "governance_engagement": {
-          "signal_count": 3,
-          "has_any_signal": true,
-          "has_strong_engagement": true
-        },
-        "peer_learning": {
-          "signal_count": 1,
-          "has_peer_learning": false
-        },
-        "isolation": {
-          "signal_count": 0,
-          "has_isolation": false
-        },
-        "connectivity_gap": false
+        "organization": "WWF Indonesia",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "imusthofa@wwf.id",
+        "submission_date": "2026-02-26"
       },
       {
         "applicant_id": 10,
+        "name": "John Rey Reyes",
+        "country": "Philippines",
+        "organization": "Tuloy Pa Rin Network",
+        "gender": "Non-binary",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "johnreyreyes12345@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 11,
+        "name": "Thilma Komaling",
         "country": "Indonesia",
-        "has_substantive_text": true,
-        "barriers": {
-          "overfishing": false,
-          "climate_impacts": false,
-          "weak_enforcement": false,
-          "market_exploitation": false,
-          "pollution": false,
-          "habitat_loss": false,
-          "limited_finance": false,
-          "exclusion_decision_making": true,
-          "limited_technology": false,
-          "weak_capacity": true,
-          "total_barriers": 2
-        },
-        "models": {
-          "community_mpa": true,
-          "mangrove_restoration": false,
-          "traceability_digital": false,
-          "bycatch_mitigation": false,
-          "community_enterprise": true,
-          "ecotourism": false,
-          "aquaculture_improvements": false,
-          "citizen_monitoring": false,
-          "total_models": 2
-        },
-        "governance_engagement": {
-          "signal_count": 2,
-          "has_any_signal": true,
-          "has_strong_engagement": false
-        },
-        "peer_learning": {
-          "signal_count": 1,
-          "has_peer_learning": false
-        },
-        "isolation": {
-          "signal_count": 0,
-          "has_isolation": false
-        },
-        "connectivity_gap": false
+        "organization": "Indonesia Tuna Consortium",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Climate Change",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "tkomaling@tunaconsortium.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 12,
+        "name": "Sepnina Like Lestari",
+        "country": "Indonesia",
+        "organization": "Mitra Bentala Indonesia",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Climate Change",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "sepninalikelestari@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 13,
+        "name": "Ralph Phillip N. Nadanga",
+        "country": "Philippines",
+        "organization": "UP Ichthyophilic Society",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "rnnadanga@up.edu.ph",
+        "submission_date": "2026-02-27"
+      },
+      {
+        "applicant_id": 14,
+        "name": "Reiny Tumbol",
+        "country": "Indonesia",
+        "organization": "Sam Ratulangi University",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "reinytumbol@yahoo.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 15,
+        "name": "Mary Jane Lamoste",
+        "country": "Philippines",
+        "organization": "Sustainable Ocean Alliance",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Visa/Travel",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "mj.rr@soalliance.org",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 16,
+        "name": "Yodhikson Marvelous Bang",
+        "country": "Indonesia",
+        "organization": "Thresher Shark Indonesia",
+        "gender": "Man",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "dickymarvelbang29@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 17,
+        "name": "Jessye Maria Deanne Awuy",
+        "country": "Indonesia",
+        "organization": "Biorock Indonesia",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "jessye.mda@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 18,
+        "name": "Nguyen Thi Thu Trang",
+        "country": "Vietnam",
+        "organization": "Centre for Marinelife Conservation",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "nthutrang@mcdvietnam.org",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 19,
+        "name": "Mikaela Clarissa",
+        "country": "Indonesia",
+        "organization": "Tamang Dugong Indonesia",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Pollution/Plastic",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "sjmikha@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 20,
+        "name": "Shinta Adelia Sukma",
+        "country": "Indonesia",
+        "organization": "Sagara Cita Indonesia Foundation",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "shintaadels01@gmail.com",
+        "submission_date": "2026-02-26",
+        "note": "Duplicate entry"
+      },
+      {
+        "applicant_id": 21,
+        "name": "Mustarakh Gelfi",
+        "country": "Indonesia",
+        "organization": "Institut Teknologi Sumatera",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Technology/Connectivity",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "mustarakh.gelfi@kl.itera.ac.id",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 22,
+        "name": "Aramita Livia Ardis",
+        "country": "Indonesia",
+        "organization": "Ocean Eye",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "aramital18@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 23,
+        "name": "Hanif Arzaq",
+        "country": "Indonesia",
+        "organization": "Environmental Justice Foundation",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "hanifarzaq@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 24,
+        "name": "Azhaar Laili Syafitri",
+        "country": "Indonesia",
+        "organization": "Mitra Bentala Indonesia",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Other"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "azhaarlailisyafitri@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 25,
+        "name": "ALBERTO G. SIMBAJON JR",
+        "country": "Philippines",
+        "organization": "BFAR Negros Island Region",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "albertosimbajonjr@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 26,
+        "name": "Rahmat Hidayat HM",
+        "country": "Indonesia",
+        "organization": "Blue Forests",
+        "gender": "Prefer not to say",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Climate Change",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "rahmathidayat.hm@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 27,
+        "name": "Julius Caezar C. Tabilin",
+        "country": "Philippines",
+        "organization": "Tambuyog Development Center",
+        "gender": "Non-binary",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "jzar.tambuyog@gmail.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 28,
+        "name": "DD",
+        "country": "Philippines",
+        "organization": "DDD",
+        "gender": "Prefer not to say",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "DD@GMAIL.COM",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 29,
+        "name": "Dornnapha Sukkree",
+        "country": "Thailand",
+        "organization": "MAST Human",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "Dorna@masthuman.org",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 30,
+        "name": "Rosinah",
+        "country": "Indonesia",
+        "organization": "KPPI - Indonesian Coastal Women Union",
+        "gender": "Woman",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "rosi93451@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 31,
+        "name": "Ma. Nikka Andrea F. Oquias",
+        "country": "Philippines",
+        "organization": "Oceana Philippines International",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "noquias@oceana.org",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 32,
+        "name": "TRÂN THI THU NGA",
+        "country": "Vietnam",
+        "organization": "FACOD",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "tttngabt@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 33,
+        "name": "Hazel Ellima",
+        "country": "Philippines",
+        "organization": "LGU Bayawan City",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "ellimajhear@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 34,
+        "name": "Andini Kusumasari",
+        "country": "Indonesia",
+        "organization": "KOLEKTIF",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Climate Change",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "kusumasariandini@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 35,
+        "name": "Mark Edison Raquino",
+        "country": "Philippines",
+        "organization": "Global Youth Biodiversity Network",
+        "gender": "Non-binary",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "mark.raquino@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 36,
+        "name": "Venerando A. Carbon",
+        "country": "Philippines",
+        "organization": "Tanon Strait Fisherfolks Federation",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "vencarbon@yahoo.com",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 37,
+        "name": "Nguyen Huu Huy Hoang",
+        "country": "Vietnam",
+        "organization": "Vietnam Tuna Association",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Visa/Travel",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "huyhoang21096@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 38,
+        "name": "Agnes Saul",
+        "country": "Malaysia",
+        "organization": "Universiti Malaysia Terengganu",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Climate Change",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "agnesaul520@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 39,
+        "name": "Johann Friedrich C. Tejada",
+        "country": "Philippines",
+        "organization": "BFAR Region 7",
+        "gender": "Man",
+        "applicant_group": "Other coastal leader",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "yoitejada@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 40,
+        "name": "Budy Wiryawan",
+        "country": "Indonesia",
+        "organization": "IPB University",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "budywiryawan62@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 41,
+        "name": "Donald Ugsang",
+        "country": "Philippines",
+        "organization": "Drone Entry (Thailand) Co., Ltd.",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Financial",
+          "Visa/Travel",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "donald.ugsang@gmail.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 42,
+        "name": "Muhammad Aththaar Nazim",
+        "country": "Indonesia",
+        "organization": "Government of Province Kepulauan Riau",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "aththaar@gmx.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 43,
+        "name": "Rio Ahmad Arianto",
+        "country": "Indonesia",
+        "organization": "Yayasan Hutan Biru / Blue Forests",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Dietary",
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 5,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "rioahmad@blue-forests.org",
+        "submission_date": "2026-02-24",
+        "note": "Highest barrier load (5 barriers)"
+      },
+      {
+        "applicant_id": 44,
+        "name": "Christine Go",
+        "country": "Indonesia",
+        "organization": "Biorock Indonesia",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "christinego@live.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 45,
+        "name": "Horácio Amaral dos Santos Guterres",
+        "country": "Timor-Leste",
+        "organization": "Director General for Fishery & Aquaculture",
+        "gender": "Man",
+        "applicant_group": "None of the above",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "falcaonapoleao@gmail.com",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 46,
+        "name": "Gianne Krisha P. Fuentes",
+        "country": "Philippines",
+        "organization": "UP Ichthyophilic Society",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "gpfuentes1@up.edu.ph",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 47,
+        "name": "Joey Pedrajas",
+        "country": "Philippines",
+        "organization": "ThinkAqua",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "hugepedrajas@gmail.com",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 48,
+        "name": "Muhammad Taufik Hidayat",
+        "country": "Indonesia",
+        "organization": "Starling Resources",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "taufik@starlingresources.com",
+        "submission_date": "2026-02-25"
+      },
+      {
+        "applicant_id": 49,
+        "name": "Teresa Gulatoon Jahanngir",
+        "country": "Other",
+        "organization": "Lamu Marine Conservation Trust",
+        "gender": "Woman",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "teresa@lamcot.org",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 50,
+        "name": "Abdullah Al Mamun",
+        "country": "Other",
+        "organization": "Noakhali Science and Technology University",
+        "gender": "Man",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "mamun_au22@yahoo.com",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 51,
+        "name": "Shivakumar Magada",
+        "country": "Other",
+        "organization": "Arabian Sea Fisheries Management Coordination",
+        "gender": "Man",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "shivakumarmagada@gmail.com",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 52,
+        "name": "JOSHUA P. SERRANO",
+        "country": "Philippines",
+        "organization": "BFAR Central Office",
+        "gender": "Man",
+        "applicant_group": "None of the above",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "serrano.joshua3679@gmail.com",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 53,
+        "name": "yola",
+        "country": "Indonesia",
+        "organization": "pokja pesisir",
+        "gender": "Woman",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "ythalia096@gmail.com",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 54,
+        "name": "Rahmat Dani",
+        "country": "Indonesia",
+        "organization": "Forkom Nelangsa",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "r.dani@nelayanrajungan.org",
+        "submission_date": "2026-02-26"
+      },
+      {
+        "applicant_id": 55,
+        "name": "Chin Nurhiqwanalina Henry Chin",
+        "country": "Malaysia",
+        "organization": "WWF-Malaysia",
+        "gender": "Woman",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 5,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "cnhenry@wwf.org.my",
+        "submission_date": "2026-02-24",
+        "note": "Highest barrier load (5 barriers)"
+      },
+      {
+        "applicant_id": 56,
+        "name": "Leon Boey",
+        "country": "Indonesia",
+        "organization": "Livingseas Foundation",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Mangroves/Ecosystems",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "leon@livingseas.asia",
+        "submission_date": "2026-02-23"
+      },
+      {
+        "applicant_id": 57,
+        "name": "Findriani Mahmud",
+        "country": "Indonesia",
+        "organization": "JAPESDA",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "findrianimahmud@gmail.com",
+        "submission_date": "2026-02-23"
+      },
+      {
+        "applicant_id": 58,
+        "name": "Venerando A. Carbon",
+        "country": "Philippines",
+        "organization": "Tanon Strait Fisherfolks Federation",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "vencarbon@yahoo.com",
+        "submission_date": "2026-02-22",
+        "note": "Duplicate entry"
+      },
+      {
+        "applicant_id": 59,
+        "name": "Yee Mon Hsu",
+        "country": "Myanmar",
+        "organization": "National Enlightenment Institute",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Visa/Travel",
+          "Time/Scheduling"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "yeemonhsu@gmail.com",
+        "submission_date": "2026-02-22"
+      },
+      {
+        "applicant_id": 60,
+        "name": "Sandra Tjan",
+        "country": "Indonesia",
+        "organization": "Indonesia LMMA Foundation",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Dietary",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "sandra.tjan@lmmaindonesia.id",
+        "submission_date": "2026-02-24"
+      },
+      {
+        "applicant_id": 61,
+        "name": "Osaias Soares",
+        "country": "Timor-Leste",
+        "organization": "ATKOMA",
+        "gender": "Man",
+        "applicant_group": "Indigenous person",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Communication/Language",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "soares.atkoma@gmail.com",
+        "submission_date": "2026-02-21"
+      },
+      {
+        "applicant_id": 62,
+        "name": "JENNAH MAE A ARELLANO",
+        "country": "Philippines",
+        "organization": "BFAR Regional Office No 2",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "jennahmaearellano@gmail.com",
+        "submission_date": "2026-02-18"
+      },
+      {
+        "applicant_id": 63,
+        "name": "Ronel Candelaria Rolloque",
+        "country": "Philippines",
+        "organization": "PRRM - Marinduque",
+        "gender": "Man",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Dietary",
+          "Communication/Language",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "rolloqueronel2@gmail.com",
+        "submission_date": "2026-02-17"
+      },
+      {
+        "applicant_id": 64,
+        "name": "Manuai Matawai",
+        "country": "Other",
+        "organization": "Mwanus E Ndras Asi Resource Development Network",
+        "gender": "Man",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "mmatawai.01@gmail.com",
+        "submission_date": "2026-02-13"
+      },
+      {
+        "applicant_id": 65,
+        "name": "Junaidi bin Awang Bulat",
+        "country": "Malaysia",
+        "organization": "Tajau Laut Community Tourism Association",
+        "gender": "Man",
+        "applicant_group": "Indigenous person",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "junaidiawangb@gmail.com",
+        "submission_date": "2026-02-12"
+      },
+      {
+        "applicant_id": 66,
+        "name": "Widhya Nugroho Satrioajie",
+        "country": "Indonesia",
+        "organization": "Hokkaido University",
+        "gender": "Man",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "wiedlipi@gmail.com",
+        "submission_date": "2026-02-12"
+      },
+      {
+        "applicant_id": 67,
+        "name": "Cherry Murillon-Cubacub",
+        "country": "Philippines",
+        "organization": "CAWIL AI Solutions",
+        "gender": "Woman",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "cherry@cawilai.co",
+        "submission_date": "2026-02-11"
+      },
+      {
+        "applicant_id": 68,
+        "name": "Elena Rodriguez",
+        "country": "Malaysia",
+        "organization": "Brightwater Technologies",
+        "gender": "Prefer not to say",
+        "applicant_group": "None of the above",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Dietary",
+          "Financial",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 5,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "david.chen@webmail.net",
+        "submission_date": "2026-02-11",
+        "note": "Highest barrier load (5 barriers)"
+      },
+      {
+        "applicant_id": 69,
+        "name": "Ryan Blake",
+        "country": "Thailand",
+        "organization": "Cascade Analytics",
+        "gender": "Man",
+        "applicant_group": "None of the above",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [
+          "Dietary",
+          "Time/Scheduling"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "ryan.blake@correspondence.info",
+        "submission_date": "2026-02-10"
+      },
+      {
+        "applicant_id": 70,
+        "name": "Liyana Izwin Khalid",
+        "country": "Malaysia",
+        "organization": "Marine Research Foundation",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Financial",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "lkhalid@mrf-asia.org",
+        "submission_date": "2026-02-09"
+      },
+      {
+        "applicant_id": 71,
+        "name": "Antonio Abletes",
+        "country": "Philippines",
+        "organization": "Eastern Samar Youth for Climate Justice",
+        "gender": "Man",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Mangroves/Ecosystems",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "allaroundtony@gmail.com",
+        "submission_date": "2026-02-09"
+      },
+      {
+        "applicant_id": 72,
+        "name": "Md Tazul Islam",
+        "country": "Other",
+        "organization": "Education",
+        "gender": "Man",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "tazul.gbn@gmail.com",
+        "submission_date": "2026-02-09"
+      },
+      {
+        "applicant_id": 73,
+        "name": "Eveline Kurniati",
+        "country": "Indonesia",
+        "organization": "LINI",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "eveline@lini.or.id",
+        "submission_date": "2026-02-10"
+      },
+      {
+        "applicant_id": 74,
+        "name": "Tariqoh Syah",
+        "country": "Indonesia",
+        "organization": "Pesisir Lestari",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Other"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "tariqoh.syah@pesisirlestari.org",
+        "submission_date": "2026-02-08"
+      },
+      {
+        "applicant_id": 75,
+        "name": "Ho Kooi Chee",
+        "country": "Malaysia",
+        "organization": "Marine Research Foundation",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "kcho@mrf-asia.org",
+        "submission_date": "2026-02-07"
+      },
+      {
+        "applicant_id": 76,
+        "name": "Patricio Vilanova",
+        "country": "Indonesia",
+        "organization": "konservasi suko Com",
+        "gender": "Not specified",
+        "applicant_group": "Women-led group",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "patricio vilanova",
+        "submission_date": "2026-02-07"
+      },
+      {
+        "applicant_id": 77,
+        "name": "Devirisal Djabumir",
+        "country": "Indonesia",
+        "organization": "Sekolah Mimpi/Dream School",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "daverizal12345@gmail.com",
+        "submission_date": "2026-02-06"
+      },
+      {
+        "applicant_id": 78,
+        "name": "Audy Nadhifa Salsabilla Suryahana",
+        "country": "Indonesia",
+        "organization": "Youth Sanitation Concern (YSC)",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "Audy.nadhifa10@gmail.com",
+        "submission_date": "2026-02-06"
+      },
+      {
+        "applicant_id": 79,
+        "name": "Rahman Dako",
+        "country": "Indonesia",
+        "organization": "JAPESDA Gorontalo",
+        "gender": "Man",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Visa/Travel",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "rdako2025@gmail.com",
+        "submission_date": "2026-02-04"
+      },
+      {
+        "applicant_id": 80,
+        "name": "Ricky Ismail Soerapoetra",
+        "country": "Indonesia",
+        "organization": "Anambas Foundation",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Visa/Travel",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "ricky@anambasfoundation.org",
+        "submission_date": "2026-02-04"
+      },
+      {
+        "applicant_id": 81,
+        "name": "Raul Pitoro",
+        "country": "Other",
+        "organization": "Agrilift Enterprises Limitada",
+        "gender": "Man",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "Pitorora@gmail.com",
+        "submission_date": "2026-02-04"
+      },
+      {
+        "applicant_id": 82,
+        "name": "Utari Octavianty",
+        "country": "Indonesia",
+        "organization": "Aruna",
+        "gender": "Woman",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Communication/Language",
+          "Technology/Connectivity",
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 5,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "utari@aruna.id",
+        "submission_date": "2026-02-04",
+        "note": "Highest barrier load (5 barriers)"
+      },
+      {
+        "applicant_id": 83,
+        "name": "Stephanus Mandagi",
+        "country": "Indonesia",
+        "organization": "Yayasan Almanustra",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Technology/Connectivity",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 4,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": true,
+        "email": "stephanus.mandagi@gmail.com",
+        "submission_date": "2026-02-04"
+      },
+      {
+        "applicant_id": 84,
+        "name": "Lilo Dwi Yulianto",
+        "country": "Indonesia",
+        "organization": "Aquatic Initiatives for Restoration",
+        "gender": "Man",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Communication/Language",
+          "Time/Scheduling",
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 5,
+        "ocean_issue_focus": "Climate Change",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "lilojulianto@gmail.com",
+        "submission_date": "2026-02-03",
+        "note": "Highest barrier load (5 barriers)"
+      },
+      {
+        "applicant_id": 85,
+        "name": "Alvin Jeyanathan Chelliah",
+        "country": "Malaysia",
+        "organization": "Reef Check Malaysia",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Time/Scheduling",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "alvin@reefcheck.org.my",
+        "submission_date": "2026-02-02"
+      },
+      {
+        "applicant_id": 86,
+        "name": "Basil T. Mustapha",
+        "country": "Philippines",
+        "organization": "Timaco multi purpose cooperative",
+        "gender": "Man",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Health",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Marine Protected Areas",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": false,
+        "email": "timacompc@yahoo.com",
+        "submission_date": "2026-02-01"
+      },
+      {
+        "applicant_id": 87,
+        "name": "Edy Trihatmoko",
+        "country": "Indonesia",
+        "organization": "BRIN",
+        "gender": "Man",
+        "applicant_group": "Other coastal leader",
+        "government_employee": true,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "edytrihatmoko@gmail.com",
+        "submission_date": "2026-01-31"
+      },
+      {
+        "applicant_id": 88,
+        "name": "Napsana larino",
+        "country": "Philippines",
+        "organization": "Payao seaweed fisherfolk & Mangrove association",
+        "gender": "Non-binary",
+        "applicant_group": "Small-scale fisher",
+        "government_employee": false,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "sananapsana39@gmail.com",
+        "submission_date": "2026-01-30"
+      },
+      {
+        "applicant_id": 89,
+        "name": "Sifa Nurseptiani",
+        "country": "Indonesia",
+        "organization": "Coral Tringale",
+        "gender": "Woman",
+        "applicant_group": "None of the above",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "sifanurseptiani@outlook.com",
+        "submission_date": "2026-01-30"
+      },
+      {
+        "applicant_id": 90,
+        "name": "Erni Bajau",
+        "country": "Indonesia",
+        "organization": "POSBI",
+        "gender": "Woman",
+        "applicant_group": "Other coastal leader",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Mobility/Accessibility",
+          "Dietary",
+          "Gender-related"
+        ],
+        "barrier_count": 3,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "ernibajau@gmail.com",
+        "submission_date": "2026-01-29"
+      },
+      {
+        "applicant_id": 91,
+        "name": "Aslan",
+        "country": "Indonesia",
+        "organization": "PT Amman Mineral Nusa Tenggara",
+        "gender": "Man",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Technology/Connectivity",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Coastal Livelihoods",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "aslan@amman.co.id",
+        "submission_date": "2026-01-29"
+      },
+      {
+        "applicant_id": 92,
+        "name": "Tapas Selarn Kaluwin",
+        "country": "Other",
+        "organization": "Marine Environment Awareness & Response Team",
+        "gender": "Man",
+        "applicant_group": "Not specified",
+        "government_employee": null,
+        "eligible": false,
+        "barriers": [],
+        "barrier_count": 0,
+        "ocean_issue_focus": "Other",
+        "governance_engagement_signal": false,
+        "regional_collaboration_interest": false,
+        "email": "tskaluwin@gmail.com",
+        "submission_date": "2026-01-29"
+      },
+      {
+        "applicant_id": 93,
+        "name": "Amiroh Husna Utami",
+        "country": "Indonesia",
+        "organization": "Parongpong RAW Lab",
+        "gender": "Woman",
+        "applicant_group": "Women-led group",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Dietary",
+          "Gender-related"
+        ],
+        "barrier_count": 2,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "ami.parongpong@gmail.com",
+        "submission_date": "2026-01-29"
+      },
+      {
+        "applicant_id": 94,
+        "name": "Nadea Nabilla",
+        "country": "Indonesia",
+        "organization": "Azura",
+        "gender": "Woman",
+        "applicant_group": "Coastal innovator",
+        "government_employee": false,
+        "eligible": true,
+        "barriers": [
+          "Gender-related"
+        ],
+        "barrier_count": 1,
+        "ocean_issue_focus": "Sustainable Fisheries",
+        "governance_engagement_signal": true,
+        "regional_collaboration_interest": true,
+        "email": "nadea@azura.id",
+        "submission_date": "2026-01-29"
       }
-    ],
-    "summary_statistics": {
-      "total_applicants_analyzed": 94,
-      "applicants_with_substantive_text": 66,
-      "applicants_with_minimal_text": 28,
-      "country_distribution": {
-        "Indonesia": 45,
-        "Philippines": 25,
-        "Malaysia": 7,
-        "Thailand": 3,
-        "Vietnam": 4,
-        "Timor-Leste": 2,
-        "Myanmar": 1,
-        "Other": 7
-      },
-      "barrier_statistics": {
-        "average_barriers_per_applicant": 4.2,
-        "applicants_with_multiple_barriers": 60,
-        "applicants_with_single_barrier": 6,
-        "applicants_with_no_barriers": 28
-      },
-      "model_statistics": {
-        "average_models_per_applicant": 2.1,
-        "applicants_with_multiple_models": 49,
-        "applicants_with_single_model": 17,
-        "applicants_with_no_models": 28
-      },
-      "engagement_statistics": {
-        "applicants_with_governance_signals": 60,
-        "applicants_with_peer_learning_signals": 62,
-        "applicants_with_isolation_signals": 41,
-        "applicants_with_connectivity_gap": 34
-      }
-    },
-    "strategic_insights": {
-      "key_finding_1": "Strong regional convergence on shared barriers (63.8% mention ≥2 of top-3 barriers) indicates cohesive problem definition across ASEAN. Weak capacity and exclusion from decision-making dominate, suggesting systemic governance and capability gaps rather than just environmental issues.",
-      "key_finding_2": "High model adoption (70.2% implement ≥1 model; 52.1% implement ≥2 models) shows practical orientation. Community enterprise dominates (53.2%); bycatch mitigation is underrepresented (3.2%), suggesting capacity gap or lower regional priority.",
-      "key_finding_3": "Policy engagement is significant but not universal (63.8% have governance signals; 31.9% show strong engagement). 36.2% have no governance signals, suggesting important community-level practitioners outside formal policy systems.",
-      "key_finding_4": "Peer learning is core motivation (66.0% express explicit cross-country engagement interest). Strong correlation with policy engagement suggests policy-engaged leaders recognize value of regional networks.",
-      "key_finding_5": "Critical opportunity: 36.2% are 'ready but structurally disconnected' (34 applicants showing isolation + governance + peer learning). These leaders demonstrate capacity and ambition but face structural barriers to visibility and support. Highest-impact intervention target for ASEAN program.",
-      "regional_opportunity": "Indonesia (44.4% connectivity gap), Philippines (36.0%), and Malaysia (42.9%) show highest concentrations of ready-but-disconnected leaders. Program should prioritize visibility, funding, and peer-learning facilitation for this group.",
-      "capacity_building_need": "Philippines shows lower model adoption (60.0%) and peer-learning demand (52.0%), suggesting potential access, language, or organizational barriers. Targeted outreach and capacity building recommended.",
-      "underutilized_models": "Bycatch mitigation (3.2%) and aquaculture improvements (8.5%) are significantly underrepresented. Program should facilitate peer learning and knowledge exchange on these models to increase adoption."
-    }
+    ]
   }
 }
